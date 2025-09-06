@@ -6,36 +6,40 @@ import { motion } from 'framer-motion'
 
 const Hero = () => {
     return (
-        <main className=' min-h-dvh  flex flex-col items-center justify-center '>
+        <main className=' min-h-fit  flex flex-col items-center justify-center pt-10 z-20 '>
             <ParticleBackground />
 
-            <div className="z-50 px-6 flex flex-col gap-10  ">
+            <div className="z-30 px-6 flex flex-col gap-6 lg:gap-10 justify-center ">
                 {/* <h1 className="text-4xl md:text-6xl font-bold mb-4">
                     Hi, I’m Evelyn
                 </h1> */}
-                <TypeAnimation
+
+                <div className='text-4xl md:text-5xl lg:text-7xl font-semibold'> <TypeAnimation
                     sequence={[
                         " Hello, I am Obison Orevaoghene",
                         2000,
 
                     ]}
-                    wrapper="h1"
+                    wrapper="span"
                     speed={20}
                     repeat={1}
                     cursor={false}
                     style={{
-                        fontSize: "4rem",
+                       
                         color: "#d8b4fe",
                         fontWeight: 300,
 
+
                     }}
-                />
+
+                /></div>
+
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 2.5, duration: 1 }}
-                    className="mt-4 text-xl text-purple-200 text-center"
+                    className="mt-4 text-xl max-md:text-base text-purple-200 text-left "
                 >
                     Full-Stack Web Developer | Problem Solver | Tech Enthusiast
                 </motion.p>
@@ -48,7 +52,7 @@ const Hero = () => {
                     className="mt-8"
                 >
 
-                    <div className='flex justify-center'>
+                    <div className='flex justify-start'>
 
 
                         <a

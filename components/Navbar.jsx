@@ -26,11 +26,11 @@ const Navbar = () => {
     },
     {
       name: "Resume",
-      url: "/",
+      url: "/resume",
     },
     {
       name: "About",
-      url: "/",
+      url: "#about",
     },
     
     {
@@ -39,12 +39,12 @@ const Navbar = () => {
     },
     {
       name: "Projects",
-      url: "/reviews",
+      url: "/projects",
     },
   ];
 
   return (
-    <nav className="flex items-center justify-center py-8 px-18 shadow-md pt-10 bg-black text-[#e2d2f3]">
+    <nav className="flex items-center justify-end lg:justify-center shadow-md py-8 px-18  pt-10 bg-black text-[#e2d2f3] sticky top-0 z-50">
      
       {/* desktop view */}
       <div className="flex items-center gap-20 max-lg:hidden">
@@ -63,7 +63,7 @@ const Navbar = () => {
 
       {/* mobile and tab view */}
       <div className="lg:hidden z-50">
-        <button onClick={() => setNavOpen(!navOpen)} className="text-2xl">
+        <button onClick={() => setNavOpen(!navOpen)} className="text-2xl text-purple-950">
           {navOpen ? <IoMdClose /> : <RiMenu3Line />}
         </button>
       </div>
