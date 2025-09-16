@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
-import ParticleBackground from './particleBackground'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
+import ParticleBackground from './ParticleBackground'
 
 const Hero = () => {
     return (

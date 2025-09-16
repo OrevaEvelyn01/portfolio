@@ -26,27 +26,25 @@ const page = () => {
   };
 
   return (
-    <div className=' bg-linear-to-bl from-[#073f3f] to-[#fffff0] min-h-dvh flex flex-col  items-center justify-center gap-10 py-15'>
+    <div className=' bg-linear-to-bl bg-gradient-to-b from-black via-[#0a0015] to-[#1a002e] min-h-dvh flex flex-col  items-center justify-center gap-10 py-15'>
 
-      <div className='flex flex-col  gap-7 items-center p-10'>
+      <div className='flex flex-col  gap-7 items-center p-10 text-white'>
         <h1 className='text-5xl font-semibold'>Get in Touch </h1>
-        <p>We will turn your fantasies into a reality.
-          With  Wajuheavens you can experience what a wedding in heaven feels like.
-        </p>
+       
       </div>
 
 
 
-      <div className='shadow-lg rounded-lg w-[80%]  max-[970px]:w-[98%] flex items-center md:justify-center bg-[#fffff0]'>
+      <div className='shadow-lg rounded-lg w-[80%]  max-[970px]:w-[98%] flex items-center md:justify-center bg-purple-300'>
         <div className=' flex flex-col md:grid md:grid-cols-3  rounded-lg text-[#Fffff0] text-sm  max-md:w-[100vw] justify-center'>
 
-          <div className='flex  flex-col gap-7 bg-[#073f3f] m-2 rounded-lg p-7 '>
+          <div className='flex  flex-col gap-7 bg-[#1a002e] m-2 rounded-lg p-7 '>
 
             <div className='flex flex-col gap-4'>
 
               <h2 className='text-2xl font-semibold pt-5'>Contact Information</h2>
 
-              <p>We are here to give our clients top tier events</p>
+             
             </div>
 
             <div className=' flex  gap-4 items-center'>
@@ -54,8 +52,8 @@ const page = () => {
               <FaPhoneAlt className='text-[#Fffff0]' />
 
               <div className='flex flex-col'>
-                <span> +2349044639999</span>
-                <span> +2349902746849</span>
+                <span> +2348144583926</span>
+                <span> +2349044631467</span>
               </div>
             </div>
 
@@ -103,7 +101,7 @@ const page = () => {
               </div>
 
 
-              <button type="submit" className='px-6 py-3 text-[#fffff0] rounded-md bg-[#073f3f]'> Send Message</button>
+              <button type="submit" className='px-6 py-3 text-[#fffff0] rounded-md bg-[#1a002e]'> Send Message</button>
 
 
             </form>

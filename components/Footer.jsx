@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className='bg-black text-gray-700 flex justify-center gap-15 items-center px-6 py-6 text-xl'>
+    <div className='bg-black text-gray-700 max-md:flex-col flex justify-center gap-15 items-center px-6 py-6 text-xl'>
     <p>&copy; Obison Orevaoghene</p>
 
     <div className='flex gap-10'>

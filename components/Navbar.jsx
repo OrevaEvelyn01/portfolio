@@ -24,10 +24,10 @@ const Navbar = () => {
       name: "Home",
       url: "/",
     },
-    {
-      name: "Resume",
-      url: "/resume",
-    },
+    // {
+    //   name: "Resume",
+    //   url: "/resume",
+    // },
     {
       name: "About",
       url: "#about",
@@ -69,7 +69,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`bg-gray-50 h-dvh overflow-hidden w-full fixed top-0 left-0 lg:hidden ${
+        className={ `bg-black h-dvh overflow-hidden w-full fixed top-0 left-0 lg:hidden ${
           navOpen ? "block" : "hidden"
         }`}
       >
