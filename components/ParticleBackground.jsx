@@ -55,7 +55,7 @@ const ParticleBackground = () => {
   }, []);
 
   return (
-    <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black via-[#0a0015] to-[#1a002e]  ">
+    <div className="absolute inset-0  bg-gradient-to-b from-black via-[#0a0015] to-[#1a002e]  h-[70dvh] ">
       <Particles id="tsparticles" init={particlesInit} options={options} />
     </div>
   )

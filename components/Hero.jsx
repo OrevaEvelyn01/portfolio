@@ -6,10 +6,10 @@ import ParticleBackground from './ParticleBackground'
 
 const Hero = () => {
     return (
-        <main className=' min-h-fit  flex flex-col items-center justify-center pt-10 z-20 '>
-            <ParticleBackground />
+        <main className=' relative  flex flex-col items-center justify-center  '>
+            <ParticleBackground  />
 
-            <div className="z-30 px-6 flex flex-col gap-6 lg:gap-10 justify-center ">
+            <div className="z-30 px-6 flex flex-col gap-6 lg:gap-10 justify-center min-h-[70dvh]">
                 {/* <h1 className="text-4xl md:text-6xl font-bold mb-4">
                     Hi, I’m Evelyn
                 </h1> */}
