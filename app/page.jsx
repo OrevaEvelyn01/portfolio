@@ -110,7 +110,7 @@ const page = () => {
             </h2>
 
             <div className="max-md:flex max-md:justify-center">
-              <div className=" grid md:grid-cols-3 gap-15 max-md:max-w-[360px]">
+              <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-15 max-md:max-w-[360px]">
                 {/* the portfolio cards */}
                 <div className="flex flex-col rounded-md gap-8  bg-black p-7  shadow-black shadow-md">
                   <Image
