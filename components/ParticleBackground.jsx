@@ -1,12 +1,10 @@
 "use client";
-
+import React from "react";
 import { useMemo, useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
-import React from 'react'
 
 const ParticleBackground = () => {
-
   const options = useMemo(() => {
     return {
       background: {
@@ -50,7 +48,7 @@ const ParticleBackground = () => {
     };
   }, []);
 
-  const particlesInit = useCallback(async engine => {
+  const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
   }, []);
 
@@ -58,9 +56,7 @@ const ParticleBackground = () => {
     <div className="absolute inset-0  bg-gradient-to-b from-black via-[#0a0015] to-[#1a002e]  h-[70dvh] ">
       <Particles id="tsparticles" init={particlesInit} options={options} />
     </div>
-  )
-}
+  );
+};
 
-export default ParticleBackground
-
-
+export default ParticleBackground;
