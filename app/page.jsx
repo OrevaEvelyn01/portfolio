@@ -33,12 +33,19 @@ const page = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="p-10 pt-10 grid md:grid-cols-2 items-center  min-h-dvh  "
+            className="p-10 pt-10 grid max-md:gap-10 md:grid-cols-2 items-center  min-h-[90dvh]  "
           >
-            <div>
+            <div className="flex flex-col gap-6 items-center">
               <h1 className="text-center text-4xl font-bold max-md:mb-10">
                 About Me
               </h1>
+
+              <Image
+                src={"/about.jpg"}
+                width={1000}
+                height={1000}
+                className="rounded-full border border-black w-60 h-60 "
+              ></Image>
             </div>
 
             <div className="flex flex-col gap-10 items-start">
@@ -53,7 +60,7 @@ const page = () => {
 
               <a
                 href="#projects"
-                className="bg-purple-600 hover:bg-purple-700 active:bg-purple-500 px-6 py-3 rounded-xl font-medium transition text-white"
+                className="bg-purple-600 hover:bg-purple-700 active:bg-purple-500 px-6 py-3 rounded-xl font-medium transition text-white max-[400px]:text-xs"
               >
                 View My Resume
               </a>
@@ -98,7 +105,7 @@ const page = () => {
           {/* my projects */}
 
           <motion.section
-            id="sampleProjects"
+            id="projects"
             className="min-h-screen flex flex-col  px-6  "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -110,116 +117,143 @@ const page = () => {
             </h2>
 
             <div className="max-md:flex max-md:justify-center">
-              <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-15 max-md:max-w-[360px]">
+              <div className=" grid gap-15 max-md:max-w-[360px]">
                 {/* the portfolio cards */}
-                <div className="flex flex-col rounded-md gap-8  bg-black p-7  shadow-black shadow-md">
-                  <Image
-                    src={"/waju.png"}
-                    width={1000}
-                    height={1000}
-                    className="rounded-md  h-45 "
-                  />
+                <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12   p-7  ">
+                  <div>
+                    <Image
+                      src={"/waju.png"}
+                      width={1000}
+                      height={1000}
+                      className="rounded-md  w-150 h-75  "
+                    />
+                  </div>
 
                   <div>
-                    <h3 className="text-xl font-bold text-purple-600 mb-1">
-                      Waju Heavens
-                    </h3>
-                    <p className="text-gray-300 mb-2">
-                      A web app to manage weddings.
-                    </p>
-                    <p className="text-sm text-gray-400">
-                      Built with React, Firebase, Tailwind CSS
-                    </p>
-                  </div>
-                  <div className="flex justify-center gap-15">
-                    <Link
-                      href={"https://wajuheavens-qj3a.vercel.app/"}
-                      className="px-3 py-2 text-gray-200 hover:bg-gray-900 transition duration-300 bg-gray-700 rounded-full"
-                    >
-                      {" "}
-                      Demo
-                    </Link>
-                    <Link
-                      href={"https://github.com/OrevaEvelyn01/wajuheavens"}
-                      className="px-3 py-2 text-gray-200 hover:bg-gray-900 transition duration-300 bg-gray-700 rounded-full"
-                    >
-                      Code
-                    </Link>
+                    <div className="max-md:text-center">
+                      <h3 className="text-xl lg:text-4xl font-bold text-black mb-3">
+                        Waju Heavens
+                      </h3>
+                      <p className="text-black mb-3 lg:text-2xl">
+                        A web app to manage weddings.
+                      </p>
+                      <p className="text-sm text-black leading-9 mb-3">
+                        Built with React, Firebase, Tailwind CSS... Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit. Asperiores
+                        culpa illo modi repudiandae laboriosam provident atque
+                        tenetur voluptatibus accusantium inventore!
+                      </p>
+                    </div>
+                    <div className="flex justify-start gap-15 max-md:justify-center">
+                      <Link
+                        href={"https://wajuheavens-qj3a.vercel.app/"}
+                        className="px-3 py-2 text-gray-200 hover:bg-gray-900 transition duration-300 bg-gray-700 rounded-full"
+                      >
+                        {" "}
+                        Demo
+                      </Link>
+                      <Link
+                        href={"https://github.com/OrevaEvelyn01/wajuheavens"}
+                        className="px-3 py-2 text-gray-200 hover:bg-gray-900 transition duration-300 bg-gray-700 rounded-full"
+                      >
+                        Code
+                      </Link>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex flex-col rounded-md gap-8  bg-black p-7  shadow-black shadow-md ">
-                  <Image
-                    src={"/calculator.png"}
-                    width={1000}
-                    height={1000}
-                    className="rounded-md  h-50 "
-                  />
+                {/* number2 */}
 
-                  <div>
-                    <h3 className="text-xl font-bold text-purple-600 mb-1">
-                      Calculator
-                    </h3>
-                    <p className="text-gray-300 mb-2">
-                      A web app to manage weddings.
-                    </p>
-                    <p className="text-sm text-gray-400">
-                      Built with Html, JavaScript and Tailwind CSS
-                    </p>
+                <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12   p-7  ">
+                  <div className=" md:order-2 ">
+                    <Image
+                      src={"/calculator.png"}
+                      width={1000}
+                      height={1000}
+                      className="rounded-md  h-75 w-150"
+                    />
                   </div>
-                  <div className="flex justify-center gap-15">
-                    <Link
-                      href={"https://calculator-one-ebon-58.vercel.app/"}
-                      className="px-3 py-2 text-gray-200 hover:bg-gray-900 transition duration-300 bg-gray-700 rounded-full"
-                    >
-                      {" "}
-                      Demo
-                    </Link>
-                    <Link
-                      href={"https://github.com/OrevaEvelyn01/calculator"}
-                      className="px-3 py-2 text-gray-200 hover:bg-gray-900 transition duration-300 bg-gray-700 rounded-full"
-                    >
-                      Code
-                    </Link>
+
+                  <div className="md:order-1 ">
+                    <div className="max-md:text-center">
+                      <h3 className="text-xl lg:text-4xl font-bold text-black mb-3">
+                        Calculator
+                      </h3>
+                      <p className="text-black mb-3 lg:text-2xl">
+                        A web app to manage weddings.
+                      </p>
+                      <p className="text-sm text-black leading-9 mb-3">
+                        Built with Html, JavaScript and Tailwind CSS... Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit.
+                        Mollitia ullam vel harum, tempore voluptatem quibusdam.
+                        Cum facere debitis nihil quam.
+                      </p>
+                    </div>
+                    <div className="flex justify-start gap-15 max-md:justify-center">
+                      <Link
+                        href={"https://calculator-one-ebon-58.vercel.app/"}
+                        className="px-3 py-2 text-gray-200 hover:bg-gray-900 transition duration-300 bg-gray-700 rounded-full"
+                      >
+                        {" "}
+                        Demo
+                      </Link>
+                      <Link
+                        href={"https://github.com/OrevaEvelyn01/calculator"}
+                        className="px-3 py-2 text-gray-200 hover:bg-gray-900 transition duration-300 bg-gray-700 rounded-full"
+                      >
+                        Code
+                      </Link>
+                    </div>
                   </div>
                 </div>
-                <div className="flex flex-col rounded-md gap-8  bg-black p-7  shadow-black shadow-md">
-                  <Image
-                    src={"/inkpress.png"}
-                    width={1000}
-                    height={1000}
-                    className="rounded-md  h-45 "
-                  />
 
+                {/* number 3 */}
+                <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12   p-7  ">
                   <div>
-                    <h3 className="text-xl font-bold text-purple-600 mb-1">
-                      InkPress
-                    </h3>
-                    <p className="text-gray-300 mb-2">A book review app</p>
-                    <p className="text-sm text-gray-400">
-                      Built with React, Firebase, Tailwind CSS
-                    </p>
+                    <Image
+                      src={"/inkpress.png"}
+                      width={1000}
+                      height={1000}
+                      className="rounded-md  h-75 w-150 "
+                    />
                   </div>
-                  <div className="flex justify-center gap-15">
-                    <Link
-                      href={"https://inkpress-a6zn.vercel.app/"}
-                      className="px-3 py-2 text-gray-200 hover:bg-gray-900 transition duration-300 bg-gray-700 rounded-full"
-                    >
-                      {" "}
-                      Demo
-                    </Link>
-                    <Link
-                      href={"https://github.com/OrevaEvelyn01/inkpress"}
-                      className="px-3 py-2 text-gray-200 hover:bg-gray-900 transition duration-300 bg-gray-700 rounded-full"
-                    >
-                      Code
-                    </Link>
+
+                  <div className="">
+                    <div className="max-md:text-center">
+                      <h3 className="text-xl lg:text-4xl font-bold text-black mb-3">
+                        InkPress
+                      </h3>
+                      <p className="text-black mb-3 lg:text-2xl">
+                        A book review app
+                      </p>
+                      <p className="text-sm text-black leading-9 mb-3">
+                        Built with React, Firebase, Tailwind CSS... Lorem ipsum
+                        dolor sit, amet consectetur adipisicing elit. Odio,
+                        nemo? Aliquam tenetur quae illum, necessitatibus ipsum
+                        ab vel laborum laudantium.
+                      </p>
+                    </div>
+                    <div className="flex justify-start gap-15 max-md:justify-center">
+                      <Link
+                        href={"https://inkpress-a6zn.vercel.app/"}
+                        className="px-3 py-2 text-gray-200 hover:bg-gray-900 transition duration-300 bg-gray-700 rounded-full"
+                      >
+                        {" "}
+                        Demo
+                      </Link>
+                      <Link
+                        href={"https://github.com/OrevaEvelyn01/inkpress"}
+                        className="px-3 py-2 text-gray-200 hover:bg-gray-900 transition duration-300 bg-gray-700 rounded-full"
+                      >
+                        Code
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="flex justify-center py-10">
+            <div className="flex justify-center py-10 max-[400px]:text-xs">
               <Link
                 href={"/projects"}
                 className=" text-base text-white bg-purple-600 py-3 px-6  rounded-full"

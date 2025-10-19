@@ -2,6 +2,7 @@ import React from 'react'
 import { FaFacebook } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -9,9 +10,10 @@ const Footer = () => {
     <p>&copy; Obison Orevaoghene</p>
 
     <div className='flex gap-10'>
-      <a href="#" className=' '> <FaFacebook /></a>
-      <a href="#"> <FaLinkedinIn /></a>
-      <a href="#"> <FaXTwitter /></a>
+      <a href="https://www.fb.com/l/6lp1kJRRR" target='_blank' className=' '> <FaFacebook /></a>
+      <a href="#" target='_blank'> <FaLinkedinIn /></a>
+      <a href="https://www.instagram.com/oreva_evelyn?igsh=Yml6dDRyb2hqbjl4" target='_blank'> <FaInstagram /></a>
+      <a href="#" target='_blank'> <FaXTwitter /></a>
     </div>
 
     </div>

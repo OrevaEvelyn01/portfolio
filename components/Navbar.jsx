@@ -39,7 +39,7 @@ const Navbar = () => {
     },
     {
       name: "Projects",
-      url: "/projects",
+      url: "#projects",
     },
   ];
 

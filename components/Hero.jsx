@@ -41,14 +41,21 @@ const Hero = () => {
                     className="mt-8"
                 >
 
-                    <div className='flex justify-start'>
+                    <div className='flex gap-6 justify-start max-[400px]:text-xs'>
 
 
                         <a
                             href="#projects"
-                            className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-medium transition text-[#e2d2f3]"
+                            className="bg-purple-600 hover:bg-purple-700 md:px-6 md:py-3 px-4 py-2  rounded-xl font-medium transition text-[#e2d2f3]"
                         >
                             View My Work
+                        </a>
+
+                        <a
+                            href="#projects"
+                            className="bg-[#e2d2f3] hover:bg-purple-100  md:px-6 md:py-3 px-4 py-2  rounded-xl font-medium transition text-purple-500"
+                        >
+                            Download resume
                         </a>
 
 

@@ -46,8 +46,9 @@ const Contact = () => {
   return (
     <div className=" min-h-dvh flex flex-col  items-center justify-center gap-10 py-15">
       <div className="shadow-lg rounded-lg w-[80%]  max-[970px]:w-[98%] flex items-center md:justify-center bg-purple-300">
-        <div className=" flex flex-col md:grid md:grid-cols-3  rounded-lg text-[#Fffff0] text-sm  max-md:w-[100vw] justify-center">
-          <div className="flex  flex-col gap-7 bg-[#1a002e] m-2 rounded-lg p-7 ">
+
+        <div className=" flex flex-col md:grid md:grid-cols-3  rounded-lg text-[#Fffff0] text-sm  max-md:w-[100vw] max-[330px]:w-[80vw]  justify-center">
+          <div className="flex  flex-col gap-7 bg-[#1a002e] m-2 rounded-lg p-7 max-sm:text-xs ">
             <div className="flex flex-col gap-4">
               <h2 className="text-2xl font-semibold pt-5">
                 Contact Information
@@ -89,7 +90,7 @@ const Contact = () => {
                     type="text"
                     id="names"
                     placeholder="Your name"
-                    className=" bg-purple-300 outline-none border-0 border-b-1 w-full placeholder:text-base "
+                    className=" bg-purple-300 outline-none border-0 border-b-1 w-full placeholder:text-base max-md:placeholder:text-sm "
                     name="name"
                   />
                 </div>
@@ -100,7 +101,7 @@ const Contact = () => {
                     type="email"
                     id="emails"
                     placeholder="email@example.com"
-                    className=" outline-none border-0 border-b-1 w-full placeholder:text-base "
+                    className=" outline-none border-0 border-b-1 w-full placeholder:text-base max-md:placeholder:text-sm "
                     name="email"
                   />
                 </div>
@@ -112,7 +113,7 @@ const Contact = () => {
                   type="text"
                   id="subject"
                   placeholder="message-subject"
-                  className=" outline-none border-0 border-b-1 w-full placeholder:text-base "
+                  className=" outline-none  border-0 border-b-1 w-full placeholder:text-base max-md:placeholder:text-sm  "
                   name="subject"
                 />
               </div>
@@ -123,7 +124,7 @@ const Contact = () => {
                   name="message"
                   id="message"
                   placeholder="Write your message"
-                  className=" outline-none border-0 border-b-2 border-b-[#073f3f] w-full placeholder:text-base "
+                  className=" outline-none border-0 border-b-2 border-b-[#073f3f] w-full placeholder:text-base max-md:placeholder:text-sm "
                 ></textarea>
               </div>
 
